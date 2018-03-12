@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="game">
+
+        <h3>Crystals Collector!</h3>
+        <p>You will be given a random number at the start of your game.
+        There are four crystals below. 
+        <br>
+        <br>
+        By clicking on a crystal you will add a specific amount of points to your total score.
+        <br>
+        <br>
+        You win the game by matching your total score to random numbers, you lose the game if your total score goes above
+            the random number.
+            <br>
+            <br>
+        The value of each crystal is hidden from you until you click on it.
+        <br>
+        <br>
+        Each time when the game starts, the game will change the values of each crystal.</p>
+
+ 
+<section>
+        <div class="score">
+        <div><p>Wins: </p><p id="wins"></p></div>
+        <div><p>Losses: </p><p id="losses"></p></div>
+        <div><p>Computer Guess: </p><p id="computerGuess"></p></div>
+        <div><p>Total Score: </p><p id="total_score"></p></div>
+    </div>
+    </section>
+
+    </div>
+
+    <div class="gems">
+        <button id="bGem" class="closing" onClick="javascript:close_clip()">
+            <img src="assets/images/blue.jpg" height="50" width="50"  />
+        </button>
+
+        <button id="gGem" class="closing" onClick="javascript:close_clip()">
+            <img src="assets/images/green.jpg" height="50" width="50"  />
+        </button>
+
+        <button id="pGem" class="closing" onClick="javascript:close_clip()">
+            <img src="assets/images/pink.jpg" height="50" width="50"  />
+        </button>
+
+        <button id="yGem" class="closing" onClick="javascript:close_clip()">
+            <img src="assets/images/yellow.jpg" height="50" width="50"  />
+        </button>
+
+    </div>
+
+    <script type="text/javascript">
+
+        //Define wins, losses, total score & gem values
+
+       // var wins = 0;
+       // var losses = 0;
+       // var total_score = "";
+      //  var computerGuess = "";
+      
+
+
+
+        //console.log(wins);
+        //console.log(losses);
+        //console.log(total_score);
+        //console.log(bGem);
+        //console.log(yGem);
+        //console.log(pGem);
+        //console.log(gGem);
+        //console.log(computerGuess);
+
+
+
+        //Generates random computer #'s between 19-120 & random button #'s 1-12
+       // var computerGuess =[Math.floor((Math.random() * 120) + 19)];
+        //var bGem = [Math.floor((Math.random() * 12) + 1)];
+        //var yGem = [Math.floor((Math.random() * 12) + 1)];
+        //var pGem = [Math.floor((Math.random() * 12) + 1)];
+        //var gGem = [Math.floor((Math.random() * 12) + 1)];
+
+        //Track which wins/losses/total score
+       // document.getElementById("wins").innerHTML = "Wins: " + wins;
+       // document.getElementById("losses").innerHTML = "Losses: " + losses;
+       // document.getElementById("total_score").innerHTML = "Total Score: " + total_score;
+       // document.getElementById("computerGuess").innerHTML = "Computer Guess: " + computerGuess;
+
+       // function gameUpdate() {
+         //   document.getElementById("wins").innerHTML = "Wins: " + wins;
+           // document.getElementById("losses").innerHTML = "Losses: " + losses;
+            //document.getElementById("total_score").innerHTML = "Total Score: " + total_score;
+       //     document.getElementById("computerGuess").innerHTML = "Computer Guess: " + computerGuess;
+
+      //  }
+
+        //Track which wins/losses/total score
+
+        //How to change .onkeyup for buttons
+
+      //  document.onkeyup = function (event) {
+           // for (i = 0; i = bGem;) {
+
+                //how to add different Gem values to score???
+                //how to assign values to buttons
+
+            //    if (bGem[i] == event.key) {
+             //       if (event.key == computerGuess) {
+                        // PLayer Win
+                        //alert player
+
+               //         alert("User Wins!")
+                //        wins++;
+                        //Reset computer guess
+
+               //         computerGuess = numbers[Math.floor((Math.random() * 120) + 19)];
+                //    }
+                 //   else {
+                        //Player Loses
+
+                //    }
+               // }
+           // }
+      //  }
+
+
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
